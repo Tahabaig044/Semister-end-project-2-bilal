@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>books</title>
+</head>
+<style>
+    .owl-carousel .item {
+  background-color: #f01111;
+  height: 53vw;
+  color: white;
+  padding: 20px 4%;
+  text-align: center;
+}
+
+.owl-carousel .owl-nav button {
+  background-color: #000000;
+}
+
+</style>
+<!-- owl-carousel-cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<!-- add-to-cart-file-link -->
+ <link rel="stylesheet" href="add-to-cart.html">
+<!-- add-to-cart-file-link -->
+<!-- CSS FILES LINKS -->
+ <link rel="stylesheet" href="assets/styling/books.css">
+<link rel="stylesheet" href="assets/styling/navbar.css">
+<!-- CSS FILES LINKS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- Font Awesome Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Font Awesome Link -->
+ <!-- swiper-js-link -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+ <!-- swiper-js-link -->
+<body>
+  <!-- navbar-start -->
+ <header class="sticky-top"> </header> 
+  <!-- navbar-start -->
+
+  <section id="books" class="books-section">
+    <h2>Books Written by Dr. Abdus Salam</h2>
+  
+    <!-- Book 1 -->
+    <div class="book-entry">
+        <p class="paro">1. Electroweak Theory</p>
+        <div class="book-detail">
+            <div class="book-image">
+                <img src="assets/styling/images/book-1.jpg" alt="Electroweak Theory Book">
+            </div>
+            <div class="book-description">
+                <p><strong>Published:</strong> 1979</p>
+                <p><strong>Description:</strong> This groundbreaking work by Dr. Abdus Salam co-authored with Steven Weinberg and Sheldon Glashow introduced the electroweak theory. This theory unified electromagnetism and the weak nuclear force, a critical advancement in the Standard Model of particle physics.</p>
+                <button class="buy-now-btn" onclick="addToCart('Electroweak Theory', 500)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Book 2 -->
+    <div class="book-entry">
+        <p class="paro">2. Theoretical Physics and Mathematics</p>
+        <div class="book-detail">
+            <div class="book-image">
+                <img src="assets/styling/images/book-2.jpg" alt="Theoretical Physics Book">
+            </div>
+            <div class="book-description">
+                <p><strong>Published:</strong> 1985</p>
+                <p><strong>Description:</strong> A comprehensive exploration of the mathematical models and advanced theories Dr. Salam developed throughout his career in theoretical physics, especially in areas related to quantum field theory and the Standard Model.</p>
+                <button class="buy-now-btn" onclick="addToCart('Theoretical Physics and Mathematics', 600)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-entry">
+        <p class="paro">3. Theoretical Physics and Mathematics</p>
+        <div class="book-detail">
+            <div class="book-image">
+                <img src="assets/styling/images/book-03.jpg" alt="Theoretical Physics Book">
+            </div>
+            <div class="book-description">
+                <p><strong>Published:</strong> 1985</p>
+                <p><strong>Description:</strong> A comprehensive exploration of the mathematical models and advanced theories Dr. Salam developed throughout his career in theoretical physics, especially in areas related to quantum field theory and the Standard Model.</p>
+                <button class="buy-now-btn" onclick="addToCart('Theoretical Physics and Mathematics', 600)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-entry">
+        <p class="paro">4. Theoretical Physics and Mathematics</p>
+        <div class="book-detail">
+            <div class="book-image">
+                <img src="assets/styling/images/book-5.jpg" alt="Theoretical Physics Book">
+            </div>
+            <div class="book-description">
+                <p><strong>Published:</strong> 1985</p>
+                <p><strong>Description:</strong> A comprehensive exploration of the mathematical models and advanced theories Dr. Salam developed throughout his career in theoretical physics, especially in areas related to quantum field theory and the Standard Model.</p>
+                <button class="buy-now-btn" onclick="addToCart('Theoretical Physics and Mathematics', 600)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-entry">
+        <p class="paro">6. Theoretical Physics and Mathematics</p>
+        <div class="book-detail">
+            <div class="book-image">
+                <img src="assets/styling/images/book-6.jpg" alt="Theoretical Physics Book">
+            </div>
+            <div class="book-description">
+                <p><strong>Published:</strong> 1985</p>
+                <p><strong>Description:</strong> A comprehensive exploration of the mathematical models and advanced theories Dr. Salam developed throughout his career in theoretical physics, especially in areas related to quantum field theory and the Standard Model.</p>
+                <button class="buy-now-btn" onclick="addToCart('Theoretical Physics and Mathematics', 600)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="owl-carousel">
+        <div class="owl-carousel">
+            <div class="item"><img src="assets/styling/images/book-1.jpg" alt="Image 1"></div>
+            <div class="item"><img src="assets/styling/images/book-2.jpg" alt="Image 2"></div>
+            <div class="item"><img src="assets/styling/images/book-03.jpg" alt="Image 3"></div>
+            <div class="item"><img src="assets/styling/images/book-4.jpg" alt="Image 4"></div>
+            <div class="item"><img src="assets/styling/images/book-5.jpg" alt="Image 4"></div>
+            <div class="item"><img src="assets/styling/images/book-6.jpg" alt="Image 4"></div>
+            <div class="item"><img src="assets/styling/images/book-new.jpg" alt="Image 4"></div>
+            <!-- Add more items as needed -->
+        </div>
+</section>
+ <!-- footer-start -->
+ <footer> </footer>
+<!-- footer-end -->
+    </body>
+    </html>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="assets/js/cart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="assets/nav-foot.js"></script>
+<script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop: true,         // Enables continuous loop
+        margin: 10,         // Space between items
+        nav: true,          // Show navigation buttons
+        dots: true,         // Show dots
+        responsive: {       // Makes it responsive
+          0: {
+            items: 1        // 1 item on small screens
+          },
+          600: {
+            items: 3        // 3 items on medium screens
+          },
+          1000: {
+            items: 5        // 5 items on larger screens
+          }
+        }
+      });
+    });
+
+    $(".owl-carousel").owlCarousel({
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  items: 3,
+});
+</script>

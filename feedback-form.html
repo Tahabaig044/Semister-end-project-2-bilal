@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="assets/styling/form.css">
+</head>
+<body>
+    <button class="btn"><a href="feedback.html">Back</a></button>
+    <section>
+        <div class="main">
+            <form id="feedback-form" action="">
+            <h1>FEEDBACK</h1>
+            <p>Your feedback is our fuel! Help us grow, share your thoughts.</p>
+            <div class="input-main">
+                <div>
+                    <input id="name" placeholder="Enter Your name" type="text">
+                </div>
+                <div>
+                    <input id="email" placeholder="Enter Your Email" type="email">
+                </div>
+                <div>
+                    <textarea id="feedback" placeholder="Enter Your Feedback"></textarea>
+                </div>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5">☆</label>
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4">☆</label>
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3">☆</label>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2">☆</label>
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1">☆</label>
+                </div>
+            </div>
+            <button>Send Feedback</button>
+        </form>
+        </div>
+    </section>
+</body>
+</html>
+
+<script>
+    var form = document.querySelector("#feedback-form");
+
+    form.addEventListener("submit", function(event){
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const feedback = document.getElementById('feedback').value;
+        const rating = document.querySelector('input[name="rating"]:checked');
+
+        // Validation
+        if (!name || !email || !feedback) {
+            alert("Please fill in all fields!");
+            return;
+        }
+
+        if (!rating) {
+            alert("Please select a star rating!");
+            return;
+        }
+
+        const ratingValue = rating.value;
+
+        // Alert with the feedback details
+        alert(`Thank you for your feedback!\nName: ${name}\nEmail: ${email}\nRating: ${ratingValue}\nFeedback: ${feedback}`); 
+
+        // Reset the form
+        form.reset();
+
+        // Redirect to the feedback page (ensure feedback.html exists)
+        window.location.href = "feedback.html";
+    });
+</script>
+

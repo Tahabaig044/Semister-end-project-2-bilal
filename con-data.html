@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Data</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1d3557;
+            margin-bottom: 20px;
+        }
+
+        #dataDisplay {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #dataDisplay p {
+            background-color: #e0f7fa;
+            border: 1px solid #00796b;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #00796b;
+        }
+
+        button {
+            display: inline-block;
+            background-color: #1d3557;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #457b9d;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        button a {
+            color: inherit;
+        }
+
+        button a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Submitted Data</h2>
+    <div id="dataDisplay"></div>
+    <button> <a href="contact.html">Back to Form</a> </button>
+
+    <script>
+        // Get the stored data from localStorage
+        let formData = localStorage.getItem("formData");
+
+        // Agar data exist karta hai, toh display karna
+        if (formData) {
+            let dataArray = formData.split("; "); // Har entry ko separate karna
+            // Display each entry
+            dataArray.forEach(function(item) {
+                document.getElementById("dataDisplay").innerHTML += `<p>${item}</p>`;
+            });
+        } else {
+            document.getElementById("dataDisplay").innerHTML = "<p>No data found.</p>";
+        }
+    </script>
+</body>
+</html>

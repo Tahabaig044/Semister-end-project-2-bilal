@@ -1,0 +1,233 @@
+/* Modal Body */
+#Section{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.modal-body {
+    padding: 20px 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    max-width: 300px;
+    height: 60vw;
+    margin: 0 auto;
+  }
+  .btn-close{
+    color: #bb2121;
+    
+  }
+  .modal-body h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Checkout Form */
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .checkout-form label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .checkout-form input,
+  .checkout-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .checkout-form input:focus,
+  .checkout-form select:focus {
+    border: 1px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  .checkout-form input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Card Details Layout */
+  .card-details {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .card-details select,
+  .card-details input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .card-details input::placeholder {
+    font-size: 14px;
+    color: #bbb;
+  }
+  
+  .checkout-btn{
+    background-color: rgb(209, 46, 46);
+    border: none;
+    padding: 1.5vw;
+    color: #ddd;
+  }
+  .checkout-btn:hover {
+    background-color: #d41414;
+  }
+  @media (max-width:600px) {
+    .modal-body {
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        max-width: 500px;
+        height: 170vw;
+        margin: 0 auto;
+      }
+      .checkout-btn{
+        background-color: rgb(209, 46, 46);
+        border: none;
+        padding: 4vw;
+      }
+  }
+  
+
+
+
+  /* Cart Section Styling */
+.cart-section {
+    max-width: 650px;
+    margin: 50px 200px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center all text in the section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Cart Section Heading */
+  .cart-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Cart Items */
+  #cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+    max-height: 350px;
+    overflow-y: auto;
+    width: 100%; /* Ensures that items occupy full width */
+    align-items: center; /* Centers items */
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ensures each item occupies most of the container */
+    transition: box-shadow 0.3s ease;
+    margin: 5px 0; /* Add margin for space between items */
+  }
+  
+  .cart-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .item-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .item-price {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Remove Button Styling */
+  .remove-item {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-item:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Cart Total */
+  .cart-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d92a2;
+    margin-top: 20px;
+    text-align: center; /* Center the cart total */
+  }
+  
+  /* Checkout Button Styling */
+  .btn-primary {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    margin: 20px auto;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+  }
+  .btn-check{
+    background-color: #bb2121;
+    padding: 1vw;
+  }
+  
+  

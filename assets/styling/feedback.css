@@ -1,0 +1,131 @@
+/* General Styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: antiquewhite;
+}
+
+.right img {
+    width: 90%;
+}
+
+.main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding-top: 20vw;
+}
+
+.left {
+    width: 60%;
+    height: 100vh;
+    padding: 4vw;
+    flex-direction: column;
+}
+
+.left button {
+    background-color: #c7322a;
+    width: 140px;
+    height: 40px;
+    border: none;
+    color: aliceblue;
+    font-weight: bold;
+    margin-top: 3vw;
+    transition: ease 0.4s;
+}
+.left button:hover {
+    background-color: #b8150d;
+}
+.left button:active {
+    background-color: #b8150d;
+    transform: scale(101%);
+}
+
+.left button a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.left h1 {
+    width: 100%;
+    font-size: 4vw;
+    font-weight: bold;
+    margin-bottom: 6vw;
+}
+
+.left p {
+    margin-top: -4vw;
+    color: rgb(74, 73, 73);
+}
+
+.right {
+    width: 40%;
+    height: 100vh;
+}
+
+.left span {
+    color: #c7322a;
+}
+
+.social-media-icons {
+    margin-top: 1.2vw;
+    color: #c7322a;
+    font-size: 2.7vw;
+    display: flex;
+    gap: 1vw;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+    .main {
+        height: 100vh;
+        flex-direction: column;
+        padding-top: 0vw;
+    }
+
+    .left {
+        width: 100%;
+        padding: 8vw 4vw;
+    }
+
+    .left h1 {
+        font-size: 7vw;
+        margin-bottom: 6vw;
+    }
+
+    .left p {
+        text-align: justify;
+        margin-bottom: 5vw;
+    }
+
+    .right img {
+        width: 90%; /* Adjusted to fit within smaller screens */
+        height: auto; /* Maintains the image aspect ratio */
+         margin-bottom: 10vw;/* Removes extra spacing above the image */
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        width: 100%; /* Centers and contains the image */
+    }
+
+    .social-media-icons {
+        font-size: 6vw;
+    }
+}
+@media (min-width: 300px) and (max-width: 499px) {
+    .right img {
+        width: 90%; /* Adjusted to fit within smaller screens */
+        height: 85%; /* Maintains the image aspect ratio */
+         margin-bottom: 10vw;/* Removes extra spacing above the image */
+    }
+}
+
+

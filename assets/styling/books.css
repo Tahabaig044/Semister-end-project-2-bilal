@@ -1,0 +1,189 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  .popular{
+    font-weight: bold;
+    font-size: 4.5vw;
+    margin-block: 1vw;
+  }
+  .swiper {
+    width: 100%;
+    height: 50%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+  }
+  .section-1{
+    background-color: rgb(209, 151, 151);
+    width: 100%;
+    height: 60%;
+    padding: 4vw;
+  }
+  .popular{
+    text-align: center;
+    color: rgb(231, 46, 46);
+  }
+  .swiper-pagination-bullet {
+        background-color: #050505 !important;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #e63a23 !important;  
+   }
+
+.books-section {
+    padding: 1vw;
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+.books-section h2 {
+    font-size: 4.3vw;
+    text-align: center;
+    color: #f01717;
+    margin-bottom: 8vw;
+}
+.book-entry {
+    margin-bottom: 40px;
+}
+.book-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    padding: 4vw 0;
+}
+
+/* Book image styling */
+.book-image img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.buy-now-btn:hover{
+    background-color: #c41616;
+}
+.buy-now-btn:active{
+    background-color: #c41616;
+    transform: scale(101%);
+}
+.book-description p strong {
+    color: #e63a23;
+}
+.book-image img:hover {
+    transform: scale(1.05); /* Image zoom effect on hover */
+}
+
+/* Book description styling */
+.book-description {
+    max-width: 600px;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.book-description p {
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.book-description strong {
+    color: #0066cc;
+}
+.buy-now-btn{
+    background-color: #eb1919;
+    width: 20vw;
+    padding: 1vw;
+    border: none;
+    color: white;
+    margin-top: 1.5vw;
+}
+/* Responsive Layout: For small screens, adjust flex direction */
+@media (max-width: 768px) {
+    .book-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-image img {
+        max-width: 200px; /* Adjust image size for smaller screens */
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .book-detail {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .book-description {
+        max-width: 500px;
+    }
+
+    .book-image img {
+        max-width: 220px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+    .book-detail {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+@media (max-width:600px) {
+    .books-section h2 {
+        font-size: 6vw;
+        text-align: center;
+        color: #f01717;
+        margin-bottom: 8vw;
+        font-weight: 900;
+        padding-top: 16vw;
+        padding-bottom: 5vw;
+    }
+    .book-description p {
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.paro{
+   font-size: 5vw;
+}
+.book-image img{
+    display: none;
+}
+.buy-now-btn{
+    background-color: #e63a23;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    margin-top: 1.5vw;
+}
+}
